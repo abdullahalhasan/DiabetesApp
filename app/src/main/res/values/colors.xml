@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#00BCD4</color>
-    <color name="gradiant_start">#009688</color>
+    <color name="colorPrimary">#00BCD4</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#B8E8EE</color>
+    <color name="gradiant_start">#24A8B9</color>
     <color name="grandiant_end">#C0E6E7</color>
-    <color name="icon_color">#009688</color>
+    <color name="icon_color">#00BCD4</color>
     <color name="hair_color">#7A7575</color>
 </resources>

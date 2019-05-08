@@ -7,15 +7,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="@dimen/frame_gap"
+    android:background="@drawable/background"
     tools:context=".VolunteerDashboardActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight=".5"
         android:textStyle="bold"
         android:textSize="@dimen/other_button"
         android:gravity="center"
+        android:layout_margin="@dimen/std_gap"
+        android:background="@android:color/white"
         android:text="@string/diabetic_school_app"/>
 
     <LinearLayout
@@ -28,8 +31,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_marginTop="@dimen/std_gap"
-            android:layout_marginBottom="@dimen/std_gap"
+            android:layout_margin="@dimen/std_gap"
             app:cardCornerRadius="@dimen/std_gap">
 
             <LinearLayout
@@ -41,8 +43,8 @@
                 android:padding="@dimen/frame_gap">
 
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="@dimen/iconSize"
+                    android:layout_height="@dimen/iconSize"
                     android:layout_gravity="center"
                     android:src="@drawable/ic_volunteer_24dp" />
 
@@ -73,6 +75,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_margin="@dimen/std_gap"
             app:cardCornerRadius="@dimen/std_gap">
 
             <LinearLayout
@@ -106,7 +109,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-
+            android:layout_margin="@dimen/std_gap"
             app:cardCornerRadius="@dimen/std_gap">
 
             <LinearLayout
@@ -160,8 +163,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_marginTop="@dimen/std_gap"
-                    android:layout_marginBottom="@dimen/std_gap"
+                    android:layout_margin="@dimen/std_gap"
                     app:cardCornerRadius="@dimen/std_gap">
 
                     <LinearLayout
@@ -173,8 +175,8 @@
                         android:padding="@dimen/frame_gap">
 
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_view_profile_24dp" />
 
@@ -202,8 +204,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_marginTop="@dimen/std_gap"
-                    android:layout_marginBottom="@dimen/std_gap"
+                    android:layout_margin="@dimen/std_gap"
                     app:cardCornerRadius="@dimen/std_gap">
 
                     <LinearLayout
@@ -215,8 +216,8 @@
                         android:padding="@dimen/frame_gap">
 
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_new_entry_24dp" />
 
@@ -243,8 +244,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:layout_marginTop="@dimen/std_gap"
-                    android:layout_marginBottom="@dimen/std_gap"
+                    android:layout_margin="@dimen/std_gap"
                     app:cardCornerRadius="@dimen/std_gap">
 
                     <LinearLayout
@@ -256,8 +256,8 @@
                         android:padding="@dimen/frame_gap">
 
                         <ImageView
-                            android:layout_width="64dp"
-                            android:layout_height="64dp"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
                             android:layout_gravity="center"
                             android:src="@drawable/ic_view_24dp" />
 

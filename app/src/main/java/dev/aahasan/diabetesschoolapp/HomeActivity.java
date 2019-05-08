@@ -3,16 +3,26 @@ package dev.aahasan.diabetesschoolapp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.VideoView;
 
 public class HomeActivity extends AppCompatActivity {
+
+    private Button homeVideoActionBtn;
+    private VideoView homeVideoView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        homeVideoActionBtn = findViewById(R.id.homeVideoActionBT);
+        homeVideoView = findViewById(R.id.homeVideoView);
+
     }
 
     @Override
@@ -60,5 +70,29 @@ public class HomeActivity extends AppCompatActivity {
     public void moreButton(View view) {
         startActivity(new Intent(this,MoreActivity.class));
         finish();
+    }
+
+    public void homeVideoView(View view) {
+
+        String videoPath = "android.resource://"+getPackageName()+"/"+R.raw.v1;
+        Uri uri = Uri.parse(videoPath);
+        homeVideoView.setVideoURI(uri);
+
+        if (homeVideoView.isPlaying()) {
+            stop();
+        } else if (!homeVideoView.isPlaying()){
+           play();
+        }
+
+    }
+
+    public void play() {
+        homeVideoView.start();
+        homeVideoActionBtn.setText("Stop");
+    }
+
+    public void stop(){
+        homeVideoView.stopPlayback();
+        homeVideoActionBtn.setText("Play");
     }
 }

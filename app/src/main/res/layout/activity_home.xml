@@ -8,13 +8,15 @@
     android:orientation="vertical"
     android:padding="@dimen/frame_gap"
     android:weightSum="9"
+    android:background="@drawable/background"
     tools:context=".HomeActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight=".5"
         android:textStyle="bold"
         android:textSize="@dimen/other_button"
+        android:background="@android:color/white"
         android:gravity="center"
         android:text="@string/diabetic_school_app"/>
 
@@ -48,28 +50,43 @@
         <VideoView
             android:id="@+id/homeVideoView"
             android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_weight="4"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4.5"
             android:layout_marginBottom="@dimen/std_gap"
+            android:fitsSystemWindows="true"
             android:layout_marginTop="@dimen/std_gap"/>
         <Button
+            android:id="@+id/homeVideoActionBT"
             android:layout_margin="10dp"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
+            android:layout_gravity="center"
             android:layout_weight="1"
             android:background="@drawable/menu_background"
             android:onClick="homeVideoView"
             android:text="play"/>
 
     </LinearLayout>
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
-        android:text="@string/home_about"
-        android:layout_marginBottom="@dimen/std_gap"
-        android:gravity="center"
-        android:layout_marginTop="@dimen/std_gap"/>
+        android:layout_weight="2">
+        <TextView
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:padding="@dimen/std_gap"
+            android:layout_height="match_parent"
+            android:text="@string/home_about"
+            android:layout_marginBottom="@dimen/std_gap"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif-thin"
+            android:textSize="@dimen/frame_gap"
+            android:isScrollContainer="true"
+            android:layout_marginTop="@dimen/std_gap"/>
+
+    </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
